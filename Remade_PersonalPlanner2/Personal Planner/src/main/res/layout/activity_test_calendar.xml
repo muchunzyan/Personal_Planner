@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/MainLay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Milck"
+    tools:context="ru.startandroid.personalplanner.TestCalendar">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/MyLay"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:background="@color/Milck"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        tools:layout_editor_absoluteX="16dp">
+
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tvTextCalendar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/Pink"
+        android:gravity="center"
+        android:text="Календарь"
+        android:textColor="@color/White"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tvLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@mipmap/arrow_leat2"
+        android:gravity="center"
+        android:textSize="50sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTextCalendar" />
+
+    <TextView
+        android:id="@+id/tvRight"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@mipmap/arrow_right2"
+        android:gravity="center"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTextCalendar" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/tv_y_m"
+        app:layout_constraintEnd_toStartOf="@+id/tvRight"
+        app:layout_constraintStart_toEndOf="@+id/tvLeft"
+        app:layout_constraintTop_toBottomOf="@+id/tvTextCalendar">
+
+        <TextView
+            android:id="@+id/tvMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Месяц"
+            android:textColor="@color/White"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="52dp"
+            tools:layout_editor_absoluteY="142dp" />
+
+        <TextView
+            android:id="@+id/tvYear"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Год"
+            android:textColor="@color/White"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="277dp"
+            tools:layout_editor_absoluteY="142dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btnClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/save_button"
+        android:padding="10dp"
+        android:text="Удалить все события"
+        android:textAlignment="center"
+        android:textColor="@color/White"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MyLay" />
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="10dp"
+        android:background="@mipmap/plus5"
+        android:textAlignment="center"
+        android:textColor="@color/White"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MyLay" />
+
+</android.support.constraint.ConstraintLayout>

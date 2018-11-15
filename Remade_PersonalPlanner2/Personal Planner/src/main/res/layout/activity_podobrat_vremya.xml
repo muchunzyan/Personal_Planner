@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/CLay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Milck"
+    tools:context="ru.startandroid.personalplanner.podobrat_vremya">
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:background="@drawable/date_and_time"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="Дата"
+        android:textColor="@color/White"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.238" />
+
+    <TextView
+        android:id="@+id/tvDuration"
+        android:layout_width="155dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/date_and_time"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="Продолжительность"
+        android:textColor="@color/White"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.202" />
+
+    <TextView
+        android:id="@+id/btnGoToaddEvent"
+        android:layout_width="133dp"
+        android:layout_height="77dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/save_button"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Вернуться к созданию мероприятия"
+        android:textColor="@color/White"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/btnPodobrat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/save_button"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Подобрать"
+        android:textColor="@color/White"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextDur"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="В минутах"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDuration" />
+
+    <TextView
+        android:id="@+id/TextD"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDate" />
+
+    <TextView
+        android:id="@+id/tvDurs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDuration" />
+
+</android.support.constraint.ConstraintLayout>

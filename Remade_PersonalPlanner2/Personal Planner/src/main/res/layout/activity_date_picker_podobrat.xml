@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Milck"
+    tools:context="ru.startandroid.personalplanner.date_picker_podobrat">
+
+    <DatePicker
+        android:id="@+id/datePicker_D"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/WhitePink"
+        app:layout_constraintBottom_toTopOf="@+id/btnGotovoD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp"/>
+
+    <Button
+        android:id="@+id/btnGotovoD"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/bordoviy"
+        android:textColor="@color/White"
+        android:text="Готово"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="btnGotovo1" type="id"/>
+    <item name="Lay" type="id"/>
+    <item name="datePicker1" type="id"/>
+</resources>
